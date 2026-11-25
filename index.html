@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>C 语言 · 填空练习</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1 id="siteTitle" class="brand">C 语言 · 填空练习</h1>
+  <div class="progress">
+    <span id="progressText" class="progress-num">0 / 0</span>
+    <span class="progress-label">已完成</span>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <div class="side-head">题目列表</div>
+    <ol id="questionList" class="qlist"></ol>
+  </aside>
+
+  <section id="stage" class="stage">
+    <div class="qhead">
+      <div class="badges">
+        <span id="topicBadge" class="badge"></span>
+        <span id="diffBadge" class="badge"></span>
+      </div>
+      <h2 id="qStem" class="stem"></h2>
+    </div>
+
+    <pre id="codeBlock" class="code"></pre>
+
+    <div id="feedback" class="feedback" hidden></div>
+
+    <div class="actions">
+      <button id="checkBtn" class="btn primary" type="button">检查答案</button>
+      <button id="resetBtn" class="btn ghost" type="button" hidden>重做本题</button>
+    </div>
+
+    <div id="explainBox" class="explain" hidden>
+      <div class="explain-title">解析</div>
+      <p id="explainText"></p>
+    </div>
+
+    <p class="tips">在空格中填写答案，按 Enter 或 Ctrl + Enter 也可以检查。</p>
+  </section>
+</main>
+
+<script src="data/questions.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
